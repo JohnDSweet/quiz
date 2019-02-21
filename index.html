@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container card">
+      <div class="jumbotron">
+        <h1>Which animal are you? Take the Quiz!</h1>
+      <div id="">
+      <form id="quiz">
+        <div class="form-group">
+          <label for="input1">Your favorite food:</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="food" value="meat" checked>
+              meat
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="food" value="fish">
+              fish
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="input2">How much do you sleep:</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="sleep" value="little" checked>
+            a little
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="sleep" value="some">
+            some
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="sleep" value="lots">
+            lots
+          </label>
+        </div>
+        <button type="submit" class="btn btn-info">Go!</button>
+      </form>
+      </div>
+        &ensp;
+        <div  class="container card answer">
+         <h3 id="floatAnswer">You are a:</h3>
+         <h3><span id="output"></span></h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
